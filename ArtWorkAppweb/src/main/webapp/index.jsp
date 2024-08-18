@@ -14,24 +14,26 @@
 <div class="welcome_page">
 <div class="hero-section">
 
-<h1>CRAFTING </h1><h1>MEMORIES</h1><h2>into</h2>
-<p class="Title-text"><h1>Works of</h1><h1> art</h1>
-<button>Get Yours <img src="images/get_icon.svg"></button>
+<span class="title-main"><label  class="heading Title-text">CRAFTING </label><label id="w" class="heading">MEMORIES </label><label class="into">into</label></span>
+
+<span class="subtitle"><label class="heading Title-text">Works of</label><label id="art" class="heading Title-text"> art</label></span>
+
+<div id="btn" class="button " id="w" ><h3 class="get">Get Yours </h3><img src="images/get_icon.svg" class="icon"></div>
 
 <div class="card-frame">
 <div class="card">
-<div class="fade img"><img src="images/Lamp_artwork.png"></div></div>
+<img  src="images/Lamp_artwork.png"></div>
 
 <div class="card">
-<div class="fade img"><img src="images/Zoro_artwork.png"></div></div>
+<img  src="images/Zoro_artwork.png"></div>
 
 <div class="card">
-<div class="fade img"><img src="images/Killua.png"></div></div>
+<img src="images/Killua.png"></div>
 
 </div>
 </div>
 
-<h1>Why Choose Me?</h1>
+<h1 class="heading" id="w">Why Choose Me?</h1>
 
 <!--  points why choose me-->
 <section class="points">
@@ -49,7 +51,7 @@
 <p><h4 class="unfocused">I invite you to explore my posts and see the variety of artworks I've created. If you have a vision in mind or need inspiration, feel free to reach out. Let's collaborate and create something beautiful together!</h4>
 </section>
 
-<h1>About Me</h1>
+<h1 class="heading" id="w">About Me</h1>
 
 <!--about container starts  -->
 <div class="about-container">
@@ -61,30 +63,34 @@
 
 <!-- Footer -->
 <footer class="footer">
-<section class="about"><h3>About Us</h3>
+<section class="about" ><h3 id="w">About Us</h3>
 <p class="about-us"><h4>Creating timeless, personalized art with passion and professionalism. Let's collaborate and bring your vision to life. Explore my gallery today!</h4></section>
 <section class="links"><h3>Quick Links</h3>
-<div class="quick-links"><h4>
+<div class="quick-links"><h4 id="w">
 Home
 Artworks
 Commissions
 Contact</h4></div></section>
-<section class="contact"><h3>Contact Us</h3>
+<section class="contact"><h3 id="w">Contact Us</h3>
 <div class="contact"><img src="images/Insta_icon.svg"> <img src="images/linkedin_icon.svg"> <img src="images/gmail_icon.svg"></div></section>
 </footer>
 
 <!--Navbar element  -->
 <nav>
-<h5>ABOUT</h5>
-<h5>ARTWORKS</h5>
-<div class="menu-icon">
-	<div class="line1"></div>
-	<div class="line2"></div>
-	</div>
 <div class="logo">
 	<div class="ellipse1"></div>
-	<div class="ellipse2"><img src="images/Logo.png"></div>
-</div>	
+	<div class="ellipse2"><img class="logo-img"src="images/Logo.png"></div>
+</div>
+<div class="group">
+<h5 id="w">ABOUT</h5>
+<h5 id="w">ARTWORKS</h5>
+<div class="menu-icon">
+	<svg xmlns="http://www.w3.org/2000/svg" width="50" height="38" viewBox="0 0 50 38" fill="none">
+  <path d="M2 11H42" stroke="#A2836E" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M2 27H42" stroke="#A2836E" stroke-linecap="round"/>
+</svg>
+	</div>
+	</div>
 </nav>
 </div>
 

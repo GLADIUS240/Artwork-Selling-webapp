@@ -9,4 +9,163 @@ html {
 	overflow-y:scroll;
 	line-height: normal;
 }
+body{
+	background-color:#000000;
+	color:#ECF0F1;
+}
 
+.hero-section{
+	width:100%vw;
+	height:153.9%vh;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.80) 100%), url(images/John_Wick.png) lightgray 50% / cover no-repeat;
+}
+
+.heading{
+	font-family: Verdana;
+	font-weight:700;
+	line-height:normal;
+}
+.Title-text{
+	display:inline;
+	color:#A2836E;
+}
+#w{
+	color:#ECF0F1;
+}
+label.into{
+	font-size:48px;
+	font-weight:400;
+	color:#8B8B8B;
+}
+.get .icon{
+	position:relative;
+}
+.button{
+position: relative;
+box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.25), 2px 2px 10px rgba(0, 0, 0, 0.25);
+border-radius: 16px;
+border: 2px #ecf0f1;
+box-sizing: border-box;
+width: 22.57%; 
+height: 4.59%;
+overflow: hidden;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+padding: 0.88vh 5.56vw;
+gap: .78%vh;
+text-align: left;
+font-size: 24px;
+color: #ecf0f1;
+font-family: Verdana;
+}
+.get{
+	display:inline;
+}
+.card{
+	display:flex;
+}
+nav{
+	width:85.55%vw;
+	height:7.8125%vh;
+	border-radius: 20px;
+	background: rgba(0, 0, 0, 0.60);
+	backdrop-filter: blur(14.399999618530273px);
+	position: fixed;
+	top: 1.56%; /* Converted from 16px */
+	left: 7.22%;
+	right: 7.22%; 
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	z-index:1000;
+	align-items:center;
+}
+label{
+font-family: Verdana;
+font-size: 72px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+display:inline;
+}
+
+.menu-icon{
+	width: 48px;
+height: 38px;
+flex-shrink: 0;
+padding-right:12px;
+}
+.ellipse2{
+	padding-top:8px;
+	padding-bottom:7px;
+	padding-left: 12px;
+	width:65px;
+	height:65px;
+	
+}
+.logo-img{
+	
+	width:100%;
+	height:100%;
+	object-fit:cover;
+	border-radius:65px;
+}
+.group{
+	padding-right:12px;
+	display:flex;
+	gap:24px;
+	flex-direction:row;
+	align-items:center;
+}
+.group h5{
+	padding:24px;
+	align-items:center;
+}
+
+#art{
+	font-family: Pacifico;
+font-size: 72px;
+font-style: normal;
+font-weight: 400;
+line-height: 116px;
+}
+.card-frame{
+ 	padding-top: 109.1%vh;
+	display: flex;
+	width: 91.5%; 
+    height: 22.7%;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 16px;
+	flex-shrink: 0;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.85) 71.95%);
+}
+.card{
+	width: 29.6vw; /* Equivalent to 427px based on a 1440px viewport width */
+    height: 30.8vh;
+flex-shrink: 0;
+overflow:hidden;
+}
+.card img{
+	width:100%;
+	height:100%;
+	object-fit:cover;
+}
+
+span.title-main{
+	padding-top: 152px;
+    align-items:flex-start;
+    display:flex;
+    flex-direction:row;
+    width:59.38vw;
+    
+}
+span.subtitle{
+	padding-top:513px;
+	align-items:flex-start;
+	display:flex;
+	flex-direction:row;
+	width:35.42vw;
+}
