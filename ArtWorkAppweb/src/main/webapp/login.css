@@ -33,7 +33,6 @@ body{
 	text-align:center;
 }
 .login{
-	
 	color:black;
 	position:absolute;
 	bottom:220px;
@@ -46,7 +45,9 @@ body{
 	background: rgba(255, 255, 255, 0.12);
 	backdrop-filter: blur(14.399999618530273px);
 	text-align:center;
+	align-items:center;
 }
+
 
 .t1{
 	padding-top:10.84vh;
@@ -92,13 +93,13 @@ em{
 	padding-top:4.98vh;
 	color: #737373;
 
-text-align: center;
+	text-align: center;
 /* H3 Description */
-font-family: Verdana;
-font-size: 1.5rem;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+	font-family: Verdana;
+	font-size: 1.5rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
 }
 
 .create{
@@ -116,28 +117,36 @@ line-height: normal;
 	color: #FFF;
 
 /* H3 Description */
-font-family: Verdana;
-font-size: 1.5rem;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+	font-family: Verdana;
+	font-size: 1.5rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
 }
 form{
 	align-items:center;
+	margin-top:14.39%;
+	padding-left: auto;
+	justify-content:space-between;
+	display:flex;
+	flex-direction:column;
+	gap:3.96%vw;
 }
 input{
 	border-radius: 8px;
-border: 1px solid #737373;
-background: #AFB2B2;
-display: flex;
-width: 80%;
-align-items: center;
+	border: 1px solid #737373;
+	background: #AFB2B2;
+	display: flex;
+	width: 80%;
+	align-items: center;
 }
 .uname{
 	padding: 1.98% 54.87% 1.82% 2.98%;
+	margin-bottom:4.11%;
 }
 .pass{
 	padding: 1.49% 58.22% 2.31% 2.97%;
+	margin-bottom: 23.64%;
 	
 }
 button{
@@ -148,13 +157,13 @@ button{
     align-items: center;
     border-radius: 16px;
 	border: 1px solid #737373;
-	background: var(--Color-Primary, #2C3E50);
+	background:  #2C3E50;
 	font-family: Verdana;
-font-size: 1.5rem;
-font-style: bold;
-font-weight: 400;
-line-height: normal;
-color:#ffffff;
+	font-size: 1.5rem;
+	font-style: bold;
+	font-weight: 400;
+	line-height: normal;
+	color:#ffffff;
 }
 .snackbar {
 	position: fixed;

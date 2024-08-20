@@ -155,17 +155,22 @@ overflow:hidden;
 }
 
 span.title-main{
-	padding-top: 152px;
-    align-items:flex-start;
+	padding-left: 10.56vw;
+	padding-top: 38.57vh;
+	gap: 1.67vw;
+    align-items:center;
     display:flex;
     flex-direction:row;
     width:59.38vw;
-    
+    text-align:center;
 }
+
 span.subtitle{
 	padding-top:513px;
-	align-items:flex-start;
+	padding-left:778px;
+	align-items:center;
 	display:flex;
+	gap:24px;
 	flex-direction:row;
 	width:35.42vw;
 }
