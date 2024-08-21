@@ -33,7 +33,7 @@
 </div>
 </div>
 
-<h1 class="heading" id="w">Why Choose Me?</h1>
+<h1 class="heading why" id="w">Why Choose Me?</h1>
 
 <!--  points why choose me-->
 <section class="points">
