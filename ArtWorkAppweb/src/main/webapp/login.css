@@ -33,8 +33,13 @@ body{
 	text-align:center;
 }
 .login{
+	padding-top: 36px; /* added this to create space between top and heading */
+    padding-bottom: 121px; /* added this to create space between button and bottom */
+    justify-content: space-between; /* added this to distribute space between elements */
 	color:black;
 	position:absolute;
+	padding-top:36px;
+	padding-bottom:11.82%;
 	bottom:220px;
 	top:220px;
 	right:68px;
@@ -113,10 +118,7 @@ em{
 	line-height: normal;
 }
 .heading{
-	
 	color: #FFF;
-
-/* H3 Description */
 	font-family: Verdana;
 	font-size: 1.5rem;
 	font-style: normal;
@@ -146,7 +148,7 @@ input{
 }
 .pass{
 	padding: 1.49% 58.22% 2.31% 2.97%;
-	margin-bottom: 23.64%;
+	margin-bottom: 12.64%;
 	
 }
 button{
@@ -164,7 +166,12 @@ button{
 	font-weight: 400;
 	line-height: normal;
 	color:#ffffff;
+	position:absolute;
+	bottom:11.82%;
+
 }
+
+
 .snackbar {
 	position: fixed;
 	bottom: 20px;
@@ -183,3 +190,44 @@ button{
 .snackbar.show {
 	visibility: visible;
 }
+
+@media (max-width: 430px) {
+    /* Hide .info element on mobile devices */
+    .info {
+        display: none;
+        visibility:hidden;
+    }
+
+    /* Style .login element for mobile devices */
+    .login {
+        width: 100%; /* Make full-width */
+        position: relative; /* Keep relative positioning */
+
+        /* Add some spacing and visual effects */
+        padding: auto; /* Add some padding for better readability */
+        backdrop-filter: blur(16.73px);
+        border-radius: 8.71px;
+        background-color: rgba(255, 255, 255, 0.12);
+        border: 0.6px solid rgba(255, 255, 255, 0.05);
+        box-sizing: border-box;
+
+        /* Set dimensions and layout */
+        max-height: 339.3px;
+        overflow: hidden;
+        text-align: left;
+        position:relative;
+
+        /* Typography */
+        font-size: 13.94px;
+        color: #737373;
+        font-family: Verdana;
+        align-items:center;
+    	justify-content: center;
+    }
+    body{
+    display:flex;
+    justify-content: center;
+    align-items: center;    
+    }
+}
+	

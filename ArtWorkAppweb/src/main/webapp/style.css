@@ -42,27 +42,30 @@ label.into{
 	position:relative;
 }
 .button{
-position: relative;
-box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.25), 2px 2px 10px rgba(0, 0, 0, 0.25);
-border-radius: 16px;
-border: 2px #ecf0f1;
-box-sizing: border-box;
-width: 22.57%; 
-height: 4.59%;
-overflow: hidden;
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center;
-padding: 0.88vh 5.56vw;
-gap: .78%vh;
-text-align: left;
-font-size: 24px;
-color: #ecf0f1;
-font-family: Verdana;
+	margin-top:5.46vh;
+	margin-left:69.88vw;
+	margin-bottom:61.33vh;
+	box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.25), 2px 2px 10px rgba(0, 0, 0, 0.25);
+	border-radius: 16px;
+	border: 2px solid #ecf0f1;
+	box-sizing: border-box;
+	width: 22.57%; 
+	height: 4.59%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 0.88vh 5.56vw;
+	gap: .56vw;
+	text-align: left;
+	font-size: 24px;
+	color: #ecf0f1;
+	font-family: Verdana;
 }
 .get{
 	display:inline;
+	white-space: nowrap;
 }
 .card{
 	display:flex;
@@ -166,18 +169,24 @@ span.title-main{
     text-align:center;
 }
 
-span.subtitle{
-	padding-top:513px;
-	padding-left:778px;
-	align-items:center;
-	display:flex;
-	gap:24px;
-	flex-direction:row;
-	width:35.42vw;
+span.subtitle {
+	margin-top:-16.10vh;
+	margin-left:43.03vw;
+    padding-left: 10vw; /* Adjusted to reduce excessive padding */
+    padding-top: 20vh; /* Adjusted to reduce excessive padding */
+    align-items: center;
+    display: flex;
+    gap: 1.67vw;
+    flex-direction: row;
+    width: auto; /* Let the width adjust to content */
+    justify-content: center; /* Center the content horizontally */
+    text-align: center;
 }
+
+
 .why{
 	font-size:4.5 rem;
-	padding-top: 8.59vh;;
+	padding-top: 8.59vh;
 }
 .points{
 		width: 12.32vw;
