@@ -12,16 +12,20 @@ html {
 body{
 	background-color:#000000;
 	color:#ECF0F1;
+	overflow:hidden;
+	display:flex;
+	
 }
 
 .hero-section{
 	width:100%vw;
 	height:153.9%vh;
+	justify-content:center;
 	background: linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.80) 100%), url(images/John_Wick.png) lightgray 50% / cover no-repeat;
 }
 
 .heading{
-	font-size:4.5 rem;
+	font-size:5vw;
 	font-family: Verdana;
 	font-weight:700;
 	line-height:normal;
@@ -34,7 +38,7 @@ body{
 	color:#ECF0F1;
 }
 label.into{
-	font-size:48px;
+	font-size: 3.33vw;
 	font-weight:400;
 	color:#8B8B8B;
 }
@@ -44,7 +48,7 @@ label.into{
 .button{
 	margin-top:5.46vh;
 	margin-left:69.88vw;
-	margin-bottom:61.33vh;
+	margin-bottom:28.68vmin;
 	box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.25), 2px 2px 10px rgba(0, 0, 0, 0.25);
 	border-radius: 16px;
 	border: 2px solid #ecf0f1;
@@ -59,16 +63,14 @@ label.into{
 	padding: 0.88vh 5.56vw;
 	gap: .56vw;
 	text-align: left;
-	font-size: 24px;
+	font-size: 3.13vmax;
 	color: #ecf0f1;
 	font-family: Verdana;
 }
 .get{
 	display:inline;
 	white-space: nowrap;
-}
-.card{
-	display:flex;
+	font-size:2.3vw;
 }
 nav{
 	width:85.55%vw;
@@ -88,7 +90,7 @@ nav{
 }
 label{
 font-family: Verdana;
-font-size: 72px;
+font-size: 7.03vmax;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
@@ -130,27 +132,28 @@ padding-right:12px;
 
 #art{
 	font-family: Pacifico;
-font-size: 72px;
+font-size: 5vw;
 font-style: normal;
 font-weight: 400;
 line-height: 116px;
 }
 .card-frame{
- 	padding-top: 109.1%vh;
+	margin-left:4.44vw;
+	margin-right:4.44vw;
+ 	margin-top: 109.1%vh;
+ 	padding-bottom:10vmin;
 	display: flex;
 	width: 91.5%; 
     height: 22.7%;
-	justify-content: space-between;
-	align-items: flex-start;
-	gap: 16px;
-	flex-shrink: 0;
+	justify-content: center;
+	align-items:center;
+	gap: 1.11vw;
 	background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.85) 71.95%);
 }
 .card{
 	width: 29.6vw; /* Equivalent to 427px based on a 1440px viewport width */
     height: 30.8vh;
-flex-shrink: 0;
-overflow:hidden;
+	overflow:hidden;
 }
 .card img{
 	width:100%;
@@ -164,33 +167,38 @@ span.title-main{
 	gap: 1.67vw;
     align-items:center;
     display:flex;
+    flex-wrap:wrap;
     flex-direction:row;
-    width:59.38vw;
+/*     width:59.38vw; */
     text-align:center;
 }
 
 span.subtitle {
 	margin-top:-16.10vh;
-	margin-left:43.03vw;
-    padding-left: 10vw; /* Adjusted to reduce excessive padding */
-    padding-top: 20vh; /* Adjusted to reduce excessive padding */
+	margin-left:54.03vw;
+	display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    padding-top: 20vh; 
     align-items: center;
-    display: flex;
     gap: 1.67vw;
-    flex-direction: row;
-    width: auto; /* Let the width adjust to content */
-    justify-content: center; /* Center the content horizontally */
+    justify-content: center; 
     text-align: center;
 }
 
 
 .why{
-	font-size:4.5 rem;
+	font-size:7.03vmax;
 	padding-top: 8.59vh;
+	text-align:center; 
 }
 .points{
-		width: 12.32vw;
-		height: 31.9vh;
+		width: 85.56vw;
+		margin-top:5.86vh;
+		margin-bottom:7.42vh;
+		align-items:center;
+		justify-content:center;
+		margin-left:7.22vw;
 }
 
 li h3{
@@ -198,8 +206,28 @@ li h3{
 	flex-shrink: 0;
 	color: #D9D9D9;
 	font-family: Verdana;
-	font-size: 2rem;
+	text-align:left;
+	font-size: 2.34vmax;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 35px; /* 109.375% */
+	line-height: 3.42vmax; /* 109.375% */
+}
+
+
+.invite{
+	width: 85.56vw;
+	align-items:center;
+	justify-content:center;
+	margin-left:7.22vw;
+}
+
+.abt{
+	padding-top: 6.67vmin;
+	text-align:center; 
+}
+
+.welcome{
+	display:flex;
+	align-items:center;
+	justify-content:center;
 }

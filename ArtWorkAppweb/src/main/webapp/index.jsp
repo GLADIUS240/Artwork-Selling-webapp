@@ -51,7 +51,7 @@
 <p><h4 class="unfocused">I invite you to explore my posts and see the variety of artworks I've created. If you have a vision in mind or need inspiration, feel free to reach out. Let's collaborate and create something beautiful together!</h4>
 </section>
 
-<h1 class="heading" id="w">About Me</h1>
+<h1 class="heading abt" id="w">About Me</h1>
 
 <!--about container starts  -->
 <div class="about-container">
