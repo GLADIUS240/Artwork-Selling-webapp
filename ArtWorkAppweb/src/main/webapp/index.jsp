@@ -64,15 +64,15 @@
 <!-- Footer -->
 <footer class="footer">
 <section class="about" ><h3 id="w">About Us</h3>
-<p class="about-us"><h4>Creating timeless, personalized art with passion and professionalism. Let's collaborate and bring your vision to life. Explore my gallery today!</h4></section>
+<p class="about-us">Creating timeless, personalized art with passion and professionalism. Let's collaborate and bring your vision to life. Explore my gallery today!</section>
 <section class="links"><h3>Quick Links</h3>
-<div class="quick-links"><h4 id="w">
+<div class="quick-links">
 <a href="#">Home</a>
 <a href="#">Artworks</a>
 <a href="#">Commissions</a>
-<a href="#">Contact</a></h4></div></section>
+<a href="#">Contact</a></div></section>
 <section class="contact"><h3 id="w">Contact Us</h3>
-<div class="contact"><img src="images/Insta_icon.svg"> <img src="images/linkedin_icon.svg"> <img src="images/gmail_icon.svg"></div></section>
+<img src="images/Insta_icon.svg"> <img src="images/linkedin_icon.svg"> <img src="images/gmail_icon.svg"></section>
 </footer>
 
 <!--Navbar element  -->
