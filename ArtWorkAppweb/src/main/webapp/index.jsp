@@ -89,7 +89,7 @@
 </div>
 
 	</div>
-<div id="menu-option " class="menu-option hid">
+<div id="menu-option" class="menu-option hid">
 <a href="#" target="_blank"> ABOUT</a>
 <a href="#" target="_blank"> ARTWORKS</a>
 <a href="#" target="_blank"> COMMISSIONS</a>
