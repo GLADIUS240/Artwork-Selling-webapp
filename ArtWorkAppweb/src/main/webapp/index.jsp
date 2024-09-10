@@ -76,21 +76,26 @@
 </footer>
 
 <!--Navbar element  -->
-<nav>
-<div class="logo">
-	<div class="ellipse1"></div>
-	<div class="ellipse2"><img class="logo-img"src="images/Logo.png"></div>
+<nav id="navbar">
+<div id="logo" class="logo">
+	<img class="logo-img"src="images/Logo.png">
 </div>
-<div class="group">
-<h5 id="w">ABOUT</h5>
-<h5 id="w">ARTWORKS</h5>
-<div class="menu-icon">
-	<svg xmlns="http://www.w3.org/2000/svg" width="50" height="38" viewBox="0 0 50 38" fill="none">
-  <path d="M2 11H42" stroke="#A2836E" stroke-width="2.5" stroke-linecap="round"/>
-  <path d="M2 27H42" stroke="#A2836E" stroke-linecap="round"/>
-</svg>
+<div id="group" class="group">
+<a id="w" target="_blank">ABOUT</a>
+<a id="w" target="_blank">ARTWORKS</a>
+<div id="menu" class="menu-icon">
+    <div class="line top-line"></div>
+    <div class="line bottom-line"></div>
+</div>
+
 	</div>
-	</div>
+<div id="menu-option " class="menu-option hid">
+<a href="#" target="_blank"> ABOUT</a>
+<a href="#" target="_blank"> ARTWORKS</a>
+<a href="#" target="_blank"> COMMISSIONS</a>
+</div>	
+<div id="log-out" class="log-out hid"><a href="#">Log out</a></div>
+	
 </nav>
 </div>
 

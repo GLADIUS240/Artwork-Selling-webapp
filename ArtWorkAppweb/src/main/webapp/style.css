@@ -67,14 +67,22 @@ label.into{
 	color: #ecf0f1;
 	font-family: Verdana;
 }
+
+.button:hover{
+	border: 2px solid #C9A389;
+	color: #C9A389;
+	cursor:pointer;
+	img.icon{
+	color: #C9A389;
+	}
+}
 .get{
 	display:inline;
 	white-space: nowrap;
 	font-size:2.3vw;
 }
 nav{
-	width:85.55%vw;
-	height:7.8125%vh;
+	
 	border-radius: 20px;
 	background: rgba(0, 0, 0, 0.60);
 	backdrop-filter: blur(14.399999618530273px);
@@ -97,38 +105,38 @@ line-height: normal;
 display:inline;
 }
 
-.menu-icon{
-	width: 48px;
-height: 38px;
-flex-shrink: 0;
-padding-right:12px;
-}
-.ellipse2{
-	padding-top:8px;
-	padding-bottom:7px;
-	padding-left: 12px;
+.logo{
 	width:65px;
 	height:65px;
-	
+	margin-top: 0.78vh;
+	margin-left:0.83vw;
+	margin-bottom:0.78vh;;
 }
+
 .logo-img{
-	
 	width:100%;
 	height:100%;
 	object-fit:cover;
 	border-radius:65px;
 }
 .group{
-	padding-right:12px;
+	margin-top:2.83vh;
+	margin-right:0.83vw;
+	margin-bottom:2.83vh;
 	display:flex;
-	gap:24px;
+	gap:1.67vw;
 	flex-direction:row;
 	align-items:center;
+
+/* H4 Description */
+	font-family: Verdana;
+	font-size: 1.25vw;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	
 }
-.group h5{
-	padding:24px;
-	align-items:center;
-}
+
 
 #art{
 	font-family: Pacifico;
@@ -350,3 +358,112 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 }
+
+.menu-icon {
+	margin-top: 0.78vh;
+    width: 50px;
+    height: 38px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:2.07vh;
+    cursor: pointer;
+}
+
+/* Styling for the lines */
+.line {
+    
+    background-color: #A2836E;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out; 
+}
+.top-line{
+	height:2.5px;
+	width:2.78vw;
+}
+.bottom-line{
+	height:1px;
+	width:2.78vw;
+}
+
+/* Top line transitions */
+.menu-icon:hover .top-line {
+     width:3.33vw;
+}
+
+/* Bottom line transitions */
+.menu-icon:hover .bottom-line {
+     width:2.22vw; 
+}
+
+nav.overlay{
+	top: 1.56%; /* Converted from 16px */
+	left: 7.22%;
+	right: 7.22%; 
+	bottom: 1.56%;
+	display:flex;
+	align-items:flex-start;
+	justify-content:space-between;
+	
+	
+}
+.logo.actv{
+	width:65px;
+	height:65px;
+	margin-top: 0.78vmax;
+	margin-left:0.83vw;
+}
+
+.group.hidden a{
+	display: none;
+}
+
+.menu-option.hid, .log-out.hid{
+	
+	display: none;
+}
+.menu-option{
+	position:absolute;
+	top:13.67vh;
+	left:13.89vw;
+	display:flex;
+	flex-direction:column;
+	align-items:left;
+	justify-content:space-between;
+	gap:7.03vh;
+	a{
+	text-decoration:none;
+	display:block;
+	color:white;
+	color: #FFF;
+	
+	font-family: Verdana;
+	font-size: 3.13vmax;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	}
+	
+}
+.log-out{
+	
+	position:absolute;
+	align-items:left;
+	justify-content:center;
+	bottom: 5.47vh;
+	left:13.89vw;
+}
+
+
+.log-out a{
+	text-decoration:none;
+	display:block;
+	color: #8B8B8B;
+
+/* H2 Description */
+	font-family: Verdana;
+	font-size: 3.13vmax;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	}
