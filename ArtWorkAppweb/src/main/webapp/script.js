@@ -4,6 +4,24 @@ const groupDiv = document.getElementById('group');
 const logo=document.getElementById('logo');
 const menuOption=document.getElementById('menu-option');
 const logOut=document.getElementById('log-out');
+
+
+const container = document.querySelector(".hero-section"); 
+const light = document.querySelector("#lit");
+
+container.addEventListener("mousemove", e => {
+    const rect = container.getBoundingClientRect();
+    const x = e.clientX - rect.left; 
+    const y = e.clientY - rect.top;  
+
+    light.style.setProperty("--x", x + "px");
+    light.style.setProperty("--y", y + "px");
+});
+
+window.addEventListener("scroll", () => {
+    const yScroll = window.scrollY;
+    light.style.setProperty("--scroll", yScroll + "px");
+});
 menuIcon.addEventListener('click', () => {
     // Toggle the active state of the menu icon
 //    menuIcon.classList.toggle('active');

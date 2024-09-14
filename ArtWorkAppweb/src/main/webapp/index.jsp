@@ -31,6 +31,8 @@
 <img src="images/Killua.png"></div>
 
 </div>
+<div id="lit" class="light"></div>
+
 </div>
 
 <h1 class="heading why" id="w">Why Choose Me?</h1>
