@@ -22,7 +22,7 @@ body{
 	height:153.9%vh;
 	justify-content:center;
 	overflow:hidden;
-	background: linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.80) 70%), url(images/John_Wick.png) lightgray 50% / cover no-repeat;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.70) 70%), url(images/John_Wick.png) lightgray 50% / cover no-repeat;
 }
 
 .heading{
@@ -71,19 +71,28 @@ label.into{
 
 .button:hover{
 	border: 2px solid #C9A389;
+	background:#533D2D;
 	color: #C9A389;
 	cursor:pointer;
 	img.icon{
-	color: #C9A389;
-	}
+	filter: invert(55%) sepia(45%) saturate(230%) hue-rotate(342deg) brightness(145%) contrast(95%);	}
 }
+
+.button:active{
+	border: 2px solid #A2836E;
+	background:#A29A95;
+	color: #ECF0F1;
+	cursor:pointer;
+	img.icon{
+	color:#ECF0F1;	}
+}
+
 .get{
 	display:inline;
 	white-space: nowrap;
 	font-size:2.3vw;
 }
 nav{
-	
 	border-radius: 20px;
 	background: rgba(0, 0, 0, 0.60);
 	backdrop-filter: blur(14.399999618530273px);
@@ -96,6 +105,7 @@ nav{
 	justify-content:space-between;
 	z-index:1000;
 	align-items:center;
+	transition: all 0.3s ease-in-out; 
 }
 label{
 font-family: Verdana;
@@ -111,7 +121,8 @@ display:inline;
 	height:65px;
 	margin-top: 0.78vh;
 	margin-left:0.83vw;
-	margin-bottom:0.78vh;;
+	margin-bottom:0.78vh;
+	position:relative;
 }
 
 .logo-img{
@@ -121,9 +132,10 @@ display:inline;
 	border-radius:65px;
 }
 .group{
-	margin-top:2.83vh;
-	margin-right:0.83vw;
-	margin-bottom:2.83vh;
+	position:fixed;
+	top:2.83vh;
+	right:0.83vmax;
+	bottom:2.83vh;
 	display:flex;
 	gap:1.67vw;
 	flex-direction:row;
@@ -252,6 +264,7 @@ li h3{
 	line-height: normal;
 }
 
+
 .abt{
 	padding-top: 9.38vh;
 	text-align:center;
@@ -294,7 +307,7 @@ footer{
 }
 .about{
 	width:34.51vw;
-	margin-left:4.69vmax;
+	margin-left:3.26vw;
 	
 }
 .about-us{
@@ -348,6 +361,7 @@ footer{
 	align-items:center;
 	justify-content:center;
 	flex-shrink:0;
+	margin-right:3.26vw;
 	
 }
 
@@ -361,35 +375,40 @@ line-height: normal;
 }
 
 .menu-icon {
-	margin-top: 0.78vh;
-    width: 50px;
-    height: 38px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+	padding-top: 0.78vh;
+	margin-right: 0.83vw;
+    width: 3.47vmax;
+    height: 3.71vmin;
+    align-items:center;
+    justify-content:center;
     gap:2.07vh;
     cursor: pointer;
+    
 }
 
 /* Styling for the lines */
 .line {
-    
     background-color: #A2836E;
     border-radius: 2px;
     transition: all 0.3s ease-in-out; 
+    transform-origin: center;
 }
 .top-line{
 	height:2.5px;
 	width:2.78vw;
+	margin-bottom:2.07vh;
+	
 }
 .bottom-line{
 	height:1px;
 	width:2.78vw;
+	
 }
 
 /* Top line transitions */
 .menu-icon:hover .top-line {
      width:3.33vw;
+     
 }
 
 /* Bottom line transitions */
@@ -397,27 +416,45 @@ line-height: normal;
      width:2.22vw; 
 }
 
+.menu-icon.active{
+	margin-right: 0.83vw;
+	padding-top: 0.78vh;
+	
+}
+
+.menu-icon.active .top-line {
+  transform: translateY(0.88vh) rotate(45deg) ;
+  height:2px;
+  width:3.33vw;
+}
+
+.menu-icon.active .bottom-line {
+  transform:translateY(-1.56vh) rotate(-45deg);
+  height:2px;
+  width:3.33vw;
+}
+
 nav.overlay{
 	top: 1.56%; /* Converted from 16px */
 	left: 7.22%;
 	right: 7.22%; 
 	bottom: 1.56%;
+	position:fixed;
+	transition:all 0.3s ease-in-out;
 	display:flex;
 	align-items:flex-start;
 	justify-content:space-between;
-	
-	
-	
 }
-.logo.actv{
-	width:65px;
-	height:65px;
-	margin-top: 0.78vmax;
-	margin-left:0.83vw;
-}
+
 
 .group.hidden a{
 	display: none;
+}
+.group.hidden{
+	position:fixed;
+	top: 2.83vh;
+	right:0.83vmax;
+	bottom:auto;
 }
 
 .menu-option.hid, .log-out.hid{
@@ -447,12 +484,15 @@ nav.overlay{
 	}
 	a:hover{
 	font-size:4.22vmax;
-	background: var(--Sandy-Brown-to-Deep-Blue, linear-gradient(316deg, #A2836E 13.25%, #2C3E50 82.58%));
+	background:  linear-gradient(316deg, #A2836E 13.25%, #2C3E50 82.58%);
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	will-change: transform, background-position;
 	 transition: all 0.45s ease-in-out; 
+	}
+	
+	a:active{
+	color:#A2836E;
 	}
 	
 	

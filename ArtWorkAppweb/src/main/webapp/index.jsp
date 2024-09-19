@@ -86,8 +86,8 @@
 <a id="w" target="_blank">ABOUT</a>
 <a id="w" target="_blank">ARTWORKS</a>
 <div id="menu" class="menu-icon">
-    <div class="line top-line"></div>
-    <div class="line bottom-line"></div>
+    <div id="tl" class="line top-line"></div>
+    <div id="bl" class="line bottom-line"></div>
 </div>
 
 	</div>

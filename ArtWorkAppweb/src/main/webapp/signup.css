@@ -1,6 +1,7 @@
 @charset "UTF-8";
 :root {
   --main-font: 'Verdana', sans-serif;
+  --font-size-H2:2.22vw/*32px*/;
   --font-size-H3: 1.67vw/*24px*/;
   --font-size-H4: 1.25vw /*18px*/;
   --font-size-paragraph-description: 1.11vw /*16px*/;
