@@ -42,7 +42,7 @@ nav{
 	top: 1.56%; /* Converted from 16px */
 	left: 7.22%;
 	right: 7.22%; 
-	display:none;
+	display:flex;
 	flex-direction:row;
 	justify-content:space-between;
 	z-index:1000;
@@ -232,12 +232,132 @@ nav.overlay{
 	
 	
 	form{
+	margin-top:11.23vh;
+	padding-left:7.22vw;
+	padding-top:7.32vh;
 	display:flex;
-	align-items:center;
+	align-items:left;
 	flex-direction:column;
 	justify-content:center;
+	gap:1.95vh;
 	}
 	.main{
 	 margin-top:3.91vh;
 	
 	}
+	fieldset{
+	font-family: var(--main-font);
+  	font-size: var(--font-size-H2);
+  	font-weight: var(--font-weight-bold);
+  	line-height: normal;
+  	font-style:normal;
+  	border:none;
+  	margin-bottom:2.54vh;
+	}
+	
+	.sub-heading{
+	color: #AFB2B2;
+	}
+	.main-heading{
+	color:#ECF0F1;
+	}
+	
+.para{
+	font-family: var(--main-font);
+  	font-size: var(--font-size-H4);
+  	font-weight: var(--font-weight-medium);
+  	line-height: normal;
+  	font-style:normal;
+	color: #BDBFBF;
+	width:85.56vw;
+	
+}	
+label{
+	font-family: var(--main-font);
+  	font-size: var(--font-size-paragraph-description);
+  	font-weight: var(--font-weight-medium);
+  	line-height: normal;
+  	font-style:normal;
+	color: #BDBDBD;
+	
+}
+
+input,select,textarea{
+	width:42.08vw;
+	height:3.13vh;
+	border-radius: 8px;
+	border: 1px solid #1A1A1A;
+	background: #080808;
+	color:#BDBDBD;
+	
+}
+input:focus,select:focus,textarea:focus {
+    border-color: #747272; 
+    outline: medium; 
+}
+option{
+	color:white;
+}
+.des{
+	width:85.56vw;
+	height:15.63vh;
+	white-space: normal;
+  	word-wrap: break-word;
+  	resize: none;
+}
+.btn{
+	margin-top:4.10vh;
+	margin-right:75.00vw;
+	width:auto;
+	height:auto;
+	display: inline-flex;
+	padding:  0.59vh 2.22vw;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	
+	border-radius: 16px;
+	border: 1px solid #4C5DB9;
+	background:  #2C3E50;
+	
+	font-family: var(--main-font);
+  	font-size: var(--font-size-H3);
+  	font-weight: var(--font-weight-medium);
+  	line-height: normal;
+  	font-style:normal;
+}
+
+.container{
+	
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:left;
+	gap:0.78vh;
+}
+.wrapper{
+	display:flex;
+	gap:1.39vw;
+	align-items:left;
+	justify-content:flex-start;
+}
+
+/* changing the style of input type file */
+input[type="file"]::file-selector-button {
+	transform:scale(0.8);
+    background-color: #1C1C1C;
+    color: #AFB2B2;
+    border: 0.5px solid #ccc;
+    
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: var(--font-size-paragraph-description);
+}
+
+input[type="file"] {
+    font-size: var(--font-size-paragraph-description);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1); /* Changes icon color to white */
+}

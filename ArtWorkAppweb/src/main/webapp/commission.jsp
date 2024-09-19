@@ -13,8 +13,11 @@
 <body>
 <div class="main">
 <form action="" method="post">
-<fieldset>Request a <span>Custom Artwork</span></fieldset>
-<p>Fill out the form below to provide details about your custom artwork request. Our talented artists will work with you to create a masterpiece.</p>
+<fieldset class="sub-heading">Request a <span class="main-heading">Custom Artwork</span></fieldset>
+<p class="para">Fill out the form below to provide details about your custom artwork request. Our talented artists will work with you to create a masterpiece.</p>
+
+<div class="wrapper">
+
 <div class="container"><label for="size">Size</label>
 <select id="size" required>
 	<optgroup label="Paper">
@@ -34,7 +37,8 @@
 		<option value="14x18 canvas">14x18 inch</option>
 	</optgroup>
 </select>
-
+</div>
+<div class="container">
 <label for="medium">Medium</label>
 <select id="medium" required>
 	<option value="graphite" selected>Graphite</option>
@@ -47,22 +51,43 @@
 </select>
 </div>
 
+</div>
+
+<div class="wrapper">
+
 <div class="container">
 	<label for="budget">Budget(in inr)</label>
 	<input type="number" min=1800>
-
+</div>
+<div class="container">
 	<label for="deadline">Deadline</label>
 	<input type="date">
 </div>
+
+</div>
+
+<div class="wrapper">
+
 <div class="container">
 	<label for="contactno">Contact No</label>
 	<input id="contactno" type="number">
-
+</div>
+<div class="container">
 	<label for="ref">Reference Image</label>
 	<input type="file" id="ref">
 </div>
 
-<input type="submit">
+</div>
+
+
+
+<div class="container">
+	<label for="description">Description</label>
+	<textarea class="des" id="description"  maxlength=500 rows="4" cols="50"></textarea>
+	
+</div>
+
+<input class="btn" type="submit" value="Submit Request">
 </form>
 </div>
 
