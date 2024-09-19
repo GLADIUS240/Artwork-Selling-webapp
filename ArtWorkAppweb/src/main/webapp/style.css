@@ -299,8 +299,8 @@ hr{
 
 
 footer{
-	margin:4.88vh 3.33vw;
-	width:100%vw;
+	margin:4.88vh 0;
+	width:100vw;
 	display:flex;
 	align-items:top;
 	justify-content:space-between;

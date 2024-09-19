@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="comission.css">
+<link rel="stylesheet" href="artworks.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Verdana:wght@400;700&display=swap" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico:wght@400&display=swap" />
 <title>Recent Artworks</title>
@@ -13,6 +13,22 @@
 <body>
 
 
+<hr>
+<!-- Footer -->
+<footer class="footer">
+<section class="about" ><h3 id="w">About Us</h3>
+<p class="about-us">Creating timeless, personalized art with passion and professionalism. Let's collaborate and bring your vision to life. Explore my gallery today!</section>
+<section class="links"><h3>Quick Links</h3>
+<div class="quick-links">
+<a href="#">Home</a>
+<a href="#">Artworks</a>
+<a href="#">Commissions</a>
+<a href="#">Contact</a></div></section>
+<section class="contact"><h3 id="w">Contact Us</h3>
+<img src="images/Insta_icon.svg"> <img src="images/linkedin_icon.svg"> <img src="images/gmail_icon.svg"></section>
+</footer>
+
+<!-- nav bar element -->
 
 <nav id="navbar">
 <div id="logo" class="logo">
@@ -37,6 +53,6 @@
 </nav>
 
 
-<script src="comission.js"></script>
+<script src="artworks.js"></script>
 </body>
 </html>
