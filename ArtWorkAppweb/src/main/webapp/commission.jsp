@@ -61,7 +61,7 @@
 </div>
 <div class="container">
 	<label for="deadline">Deadline</label>
-	<input type="date">
+	<input id="appointment" type="date">
 </div>
 
 </div>
@@ -70,11 +70,11 @@
 
 <div class="container">
 	<label for="contactno">Contact No</label>
-	<input id="contactno" type="number">
+	<input id="contactno" type="number" pattern="\d{10}" required maxlength=10>
 </div>
 <div class="container">
 	<label for="ref">Reference Image</label>
-	<input type="file" id="ref">
+	<input type="file" id="ref" accept=".img,.jpeg,.jpg,.svg,.heic,.pdf" required>
 </div>
 
 </div>

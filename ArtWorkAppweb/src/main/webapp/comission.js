@@ -20,3 +20,18 @@ menuIcon.addEventListener('click', () => {
 	logOut.classList.toggle('hid');
 	
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+   var today = new Date();
+   var minDate = new Date(today.setDate(today.getDate() + 5));
+   var minDateString = minDate.toISOString().split('T')[0];
+   document.getElementById('appointment').setAttribute('min', minDateString);
+ });
+ 
+ 
+ const phoneNumber = document.getElementById('contactno').value;
+ const phoneRegex = /^\d{10}$/;
+
+ if (!phoneRegex.test(phoneNumber)) {
+     alert('Please enter a valid 10-digit phone number.');
+ }
