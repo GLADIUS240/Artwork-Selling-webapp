@@ -26,7 +26,7 @@ body{
 	display:flex;
 	align-items:center;
 	justify-content:center;
-	color:#fff;
+	
 	
 }
 
@@ -265,7 +265,7 @@ nav.overlay{
 .para{
 	font-family: var(--main-font);
   	font-size: var(--font-size-H4);
-  	font-weight: var(--font-weight-medium);
+  	font-weight: var(--font-weight-normal);
   	line-height: normal;
   	font-style:normal;
 	color: #BDBFBF;
@@ -275,7 +275,7 @@ nav.overlay{
 label{
 	font-family: var(--main-font);
   	font-size: var(--font-size-paragraph-description);
-  	font-weight: var(--font-weight-medium);
+  	font-weight: var(--font-weight-normal);
   	line-height: normal;
   	font-style:normal;
 	color: #BDBDBD;
@@ -322,7 +322,7 @@ option{
 	
 	font-family: var(--main-font);
   	font-size: var(--font-size-H3);
-  	font-weight: var(--font-weight-medium);
+  	font-weight: var(--font-weight-normal);
   	line-height: normal;
   	font-style:normal;
 }

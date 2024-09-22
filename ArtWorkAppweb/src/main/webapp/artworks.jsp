@@ -12,13 +12,103 @@
 </head>
 <body>
 
+<div class="gallery">
+
+<div class="image i1" id="image">
+	<div id="fade" class="fade ">
+		<div class="description">
+			<h4 class="topic">Pencil Color Artwork</h4>
+			<h4 class="des">Roronoa Zoro From One Piece</h4>
+		</div>
+	</div>
+</div>
+
+<div class="image i2" id="image">
+	<div id="fade" class="fade ">
+		<div class="description">
+			<h4 class="topic">Graphite Pencil Potrait</h4>
+			<h4 class="des">Keanu Reeves AKA John Wick </h4>
+		</div>
+	</div>
+</div>
+
+<div class="image i3" id="image">
+	<div id="fade" class="fade ">
+		<div class="description">
+			<h4 class="topic">Acrylic Canvas Painting</h4>
+			<h4 class="des">Moonfall Painting</h4>
+		</div>
+	</div>
+</div>
+
+<div class="image i4" id="image">
+	<div id="fade" class="fade ">
+		<div class="description">
+			<h4 class="topic">Graphite and Charcoal Pencil Potrait</h4>
+			<h4 class="des">Cillian Murphy AKA Thomas Shelby</h4>
+		</div>
+	</div>
+</div>
+
+<div class="image i5" id="image">
+	<div id="fade" class="fade ">
+		<div class="description">
+			<h4 class="topic">Graphite Pencil Artwork</h4>
+			<h4 class="des">Usual Still life painting with a landscape</h4>
+		</div>
+	</div>
+</div>
+
+<div class="image i6" id="image">
+	<div id="fade" class="fade ">
+		<div class="description">
+			<h4 class="topic">Graphite Pencil Potrait</h4>
+			<h4 class="des">Selena Gomez Potrait</h4>
+		</div>
+	</div>
+</div>
+
+<div class="image i7" id="image">
+	<div id="fade" class="fade ">
+		<div class="description">
+			<h4 class="topic">Pen & Pencil Artwork</h4>
+			<h4 class="des">killua From Hunter X Hunter Anime</h4>
+		</div>
+	</div>
+</div>
+
+<div class="image i8" id="image">
+	<div id="fade" class="fade ">
+		<div class="description">
+			<h4 class="topic">Abstract Potrait</h4>
+			<h4 class="des">Water Color on canvas Mother Teresa</h4>
+		</div>
+	</div>
+</div>
+
+<div class="image i9" id="image">
+	<div id="fade" class="fade ">
+		<div class="description">
+			<h4 class="topic">Charcoal Powder Potrait</h4>
+			<h4 class="des">Johnny Depp Potrait Pending</h4>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+
 
 <hr>
 <!-- Footer -->
 <footer class="footer">
 <section class="about" ><h3 id="w">About Us</h3>
 <p class="about-us">Creating timeless, personalized art with passion and professionalism. Let's collaborate and bring your vision to life. Explore my gallery today!</section>
-<section class="links"><h3>Quick Links</h3>
+<section class="links"><h3 id="w">Quick Links</h3>
 <div class="quick-links">
 <a href="#">Home</a>
 <a href="#">Artworks</a>
