@@ -26,9 +26,9 @@
 
 <div class="login">
 <span class="heading">Log in to your Account</span>
-<form action="" method="post">
-<input class="uname" type="text" placeholder="User Name">
-<input class="pass" type="password" placeholder="password">
+<form action="login" method="post">
+<input class="uname" name="uname" type="text" placeholder="User Name">
+<input class="pass" name="pass" type="password" placeholder="password">
 <button type="submit">Log In</button>
 </form>
 </div>
