@@ -1,0 +1,435 @@
+@charset "UTF-8";
+:root {
+  --main-font: 'Verdana', sans-serif;
+  --font-size-H2:2.22vw/*32px*/;
+  --font-size-H3: 1.67vw/*24px*/;
+  --font-size-H4: 1.25vw /*18px*/;
+  --font-size-paragraph-description: 1.11vw /*16px*/;
+  --font-weight-bold: 700;
+  --font-weight-normal: 400;
+}
+
+
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+html {
+	overflow-x:hidden;
+	overflow-y:scroll;
+	line-height: normal;
+}
+body{
+	background-color:#000000;
+	overflow:hidden;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	
+}
+
+#w{
+	color:#ECF0F1;
+}
+
+nav{
+	border-radius: 20px;
+	background: rgba(0, 0, 0, 0.60);
+	backdrop-filter: blur(14.399999618530273px);
+	position: fixed;
+	top: 1.56%; /* Converted from 16px */
+	left: 7.22%;
+	right: 7.22%; 
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	z-index:1000;
+	align-items:center;
+	transition: all 0.3s ease-in-out; 
+}
+
+.logo{
+	width:65px;
+	height:65px;
+	margin-top: 0.78vh;
+	margin-left:0.83vw;
+	margin-bottom:0.78vh;
+	position:relative;
+}
+
+.logo-img{
+	width:100%;
+	height:100%;
+	object-fit:cover;
+	border-radius:65px;
+}
+.group{
+	position:fixed;
+	top:2.83vh;
+	right:0.83vmax;
+	bottom:2.83vh;
+	display:flex;
+	gap:1.67vw;
+	flex-direction:row;
+	align-items:center;
+
+/* H4 Description */
+	font-family: Verdana;
+	font-size: 1.25vw;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	
+}
+
+.menu-icon {
+	padding-top: 0.78vh;
+	margin-right: 0.83vw;
+    width: 3.47vmax;
+    height: 3.71vmin;
+    align-items:center;
+    justify-content:center;
+    gap:2.07vh;
+    cursor: pointer;
+    
+}
+
+/* Styling for the lines */
+.line {
+    background-color: #A2836E;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out; 
+    transform-origin: center;
+}
+.top-line{
+	height:2.5px;
+	width:2.78vw;
+	margin-bottom:2.07vh;
+	
+}
+.bottom-line{
+	height:1px;
+	width:2.78vw;
+	
+}
+
+/* Top line transitions */
+.menu-icon:hover .top-line {
+     width:3.33vw;
+     
+}
+
+/* Bottom line transitions */
+.menu-icon:hover .bottom-line {
+     width:2.22vw; 
+}
+
+.menu-icon.active{
+	margin-right: 0.83vw;
+	padding-top: 0.78vh;
+	
+}
+
+.menu-icon.active .top-line {
+  transform: translateY(0.88vh) rotate(45deg) ;
+  height:2px;
+  width:3.33vw;
+}
+
+.menu-icon.active .bottom-line {
+  transform:translateY(-1.56vh) rotate(-45deg);
+  height:2px;
+  width:3.33vw;
+}
+
+nav.overlay{
+	top: 1.56%; /* Converted from 16px */
+	left: 7.22%;
+	right: 7.22%; 
+	bottom: 1.56%;
+	position:fixed;
+	transition:all 0.3s ease-in-out;
+	display:flex;
+	align-items:flex-start;
+	justify-content:space-between;
+}
+
+
+.group.hidden a{
+	display: none;
+}
+.group.hidden{
+	position:fixed;
+	top: 2.83vh;
+	right:0.83vmax;
+	bottom:auto;
+}
+
+.menu-option.hid, .log-out.hid {
+	
+	display: none;
+}
+.menu-option{
+	position:absolute;
+	top:13.67vh;
+	left:13.89vw;
+	display:flex;
+	flex-direction:column;
+	align-items:left;
+	justify-content:space-between;
+	gap:7.03vh;
+	a{
+	text-decoration:none;
+	display:block;
+	color:white;
+	color: #FFF;
+	
+	font-family: Verdana;
+	font-size: 3.13vmax;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	}
+	a:hover{
+	font-size:4.22vmax;
+	background:  linear-gradient(316deg, #A2836E 13.25%, #2C3E50 82.58%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	 transition: all 0.45s ease-in-out; 
+	}
+	
+	a:active{
+	color:#A2836E;
+	}
+	
+	
+}
+.log-out{
+	
+	position:absolute;
+	align-items:left;
+	justify-content:center;
+	bottom: 5.47vh;
+	left:13.89vw;
+}
+
+
+.log-out a{
+	text-decoration:none;
+	display:block;
+	color: #8B8B8B;
+
+/* H2 Description */
+	font-family: Verdana;
+	font-size: 3.13vmax;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	}
+	
+
+hr{
+/* 	margin-top:11.25vmin; */
+	padding-top:0.20vh;
+	border:hidden;
+	background:linear-gradient(-50.455deg, #A2836E 0%, #2C3E50 100%);
+}
+.main{
+	
+	width:100vw;
+	height:85vh;
+	background:red;
+}	
+footer{
+	margin:4.88vh 0;
+	width:100vw;
+	display:flex;
+	align-items:top;
+	justify-content:space-between;
+}
+.about{
+	width:34.51vw;
+	margin-left:3.26vw;
+	
+}
+.about-us{
+	margin-top: 2.34vh;
+	color: #CFCFCF;
+	font-family: Verdana;
+	font-size: 1.67vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 3.28vh;
+}
+
+.links{
+	
+	width:auto;
+	
+}
+
+
+.quick-links {
+	display:flex;
+	align-items:left;
+	flex-direction:column;
+	justify-content:center;
+	margin-top:2.34vh;
+	
+}
+.quick-links a{
+	text-decoration:none;
+	display:block;
+	margin-bottom:2.34vh;
+	color: #D9D9D9;
+
+	font-family: Verdana;
+	font-size: 1.67vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+
+/* contact icons */
+.contact h3{
+	margin-bottom:2.34vh;
+}
+.contact img{
+	margin-right:1.34vmax;
+}
+ .contact{
+	display:felx;
+	align-items:center;
+	justify-content:center;
+	flex-shrink:0;
+	margin-right:3.26vw;
+	
+}
+
+
+.about h3,.contact h3,.links h3{
+font-family: Verdana;
+font-size: 2.13vmax;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}	
+
+.gallery{
+	display: grid;
+  	grid-template-columns: repeat(3, 27.57vw);
+	margin: 14.06vh 7.22vw 7.81vh 7.22vw;
+	gap: 1.17vh 1.39vw;
+}		
+
+
+.image{
+/* 	width:27.57vw; */
+/* 	height:47.27vh; */
+	width: 27.57vw;
+	height: 484px;
+	overflow:hidden;
+	border-radius:1.32vw;
+	display: flex;
+	flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+   
+}
+
+/* all images background cards */
+
+.image.i1{
+	 background:url(images/Zoro_artwork.png) lightgray 50% / cover no-repeat;
+	 background-size: 34.17vw  600px;
+     transition:all .3s ease-in-out;
+}
+.image.i2{
+	 background:url(images/John_Wick.png) lightgray 50% / cover no-repeat;
+	 background-size: 34.17vw  600px;
+     transition:all .3s ease-in-out;
+}
+.image.i3{
+	 background:url(images/Moonfall.png) lightgray 50% / cover no-repeat;
+	 background-size: 34.17vw  600px;
+     transition:all .3s ease-in-out;
+}
+.image.i4{
+	 background:url(images/Cillian_Murphy.png) lightgray 50% / cover no-repeat;
+	 background-size: 34.17vw  600px;
+     transition:all .3s ease-in-out;
+}
+.image.i5{
+	 background:url(images/Lamp_artwork.png) lightgray 50% / cover no-repeat;
+	 background-size: 34.17vw  600px;
+     transition:all .3s ease-in-out;
+}
+.image.i6{
+	 background:url(images/Selena.png) lightgray 50% / cover no-repeat;
+	 background-size: 34.17vw  600px;
+     transition:all .3s ease-in-out;
+}
+.image.i7{
+	 background:url(images/Killua.png) lightgray 50% / cover no-repeat;
+	 background-size: 34.17vw  600px;
+     transition:all .3s ease-in-out;
+}
+.image.i8{
+	 background:url(images/Mother_teresa.png) lightgray 50% / cover no-repeat;
+	 background-size: 34.17vw  600px;
+     transition:all .3s ease-in-out;
+}
+.image.i9{
+	 background:url(images/Johnny_depp.png) lightgray 50% / cover no-repeat;
+	 background-size: 34.17vw  600px;
+     transition:all .3s ease-in-out;
+}
+
+
+
+.image:hover{
+	background-size: 27.57vw  484px;
+}
+
+.fade{
+	transition: opacity 0.3s ease-in-out;
+	opacity: 0;
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-end;
+	width:100%;
+	height:100%;
+	align-items:left;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.85) 100%), rgba(0, 0, 0, 0.20);
+	
+}
+
+.description{
+	display: flex;
+	width: 100%;
+	padding: 0vh 0vw 1.17vh 0.83vw;
+	flex-direction: column;
+	justify-content: center;
+	align-items: left;
+	gap: 0.78vh;
+}
+
+h4{ 
+	text-align:left;
+	font-family: var(--main-font);
+  	font-size: var(--font-size-H4);
+  	font-weight: var( --font-weight-normal);
+  	line-height: normal;
+  	font-style:normal;
+	color: #ECF0F1;
+}
+h4.topic{
+	font-weight: var( --font-weight-bold);
+	padding:0;
+	
+}

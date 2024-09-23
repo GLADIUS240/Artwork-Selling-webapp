@@ -1,0 +1,233 @@
+@charset "UTF-8";
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+html {
+	overflow:hidden;
+	line-height: normal;
+}
+body{
+	display: inline-flex;
+	align-items: center;
+    flex-shrink: 0;
+	color:#ECF0F1;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.64) 0%, rgba(0, 0, 0, 0.64) 100%), url(images/Abstract_background.png) lightgray 50% / cover ;
+}
+
+.info{
+	border-radius: 16px;
+	background:  #ECF0F1;
+	width:45.69vw;
+	height:96.48vh;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	color:black;
+	position:absolute;
+	top:18px;
+	left:18px;
+	bottom:18px;
+	text-align:center;
+}
+.login{
+	padding-top: 36px; /* added this to create space between top and heading */
+    padding-bottom: 121px; /* added this to create space between button and bottom */
+    justify-content: space-between; /* added this to distribute space between elements */
+	color:black;
+	position:absolute;
+	padding-top:36px;
+	padding-bottom:11.82%;
+	bottom:220px;
+	top:220px;
+	right:68px;
+	width:42.08vw;
+	height:57.03vh;
+	border-radius: 15px;
+	border: 1px solid rgba(255, 255, 255, 0.05);
+	background: rgba(255, 255, 255, 0.12);
+	backdrop-filter: blur(14.399999618530273px);
+	text-align:center;
+	align-items:center;
+}
+
+
+.t1{
+	padding-top:10.84vh;
+	font-family: Verdana;
+	font-size: 2rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal
+}
+
+.message{
+	padding-top:4.10vh;
+	color: #000;
+	text-align:center;
+/* H0 Description */
+	font-family: Verdana;
+	font-size: 4.5rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+em{
+	color: #000;
+	text-align: center;
+/* H0 Heading */
+	font-family: Pacifico;
+	font-size: 4.5rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 116px; /* 161.111% */
+}
+
+.strk svg{
+	width:28.75vw;
+	padding-top:494px;
+	z-index:-1;
+	display:block;
+/* 	bottom:48.24vh; */
+}
+
+.subheading{
+	padding-top:4.98vh;
+	color: #737373;
+
+	text-align: center;
+/* H3 Description */
+	font-family: Verdana;
+	font-size: 1.5rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.create{
+	color: var(--Color-Primary, #2C3E50);
+	align-items:center;
+	text-align:center;
+	font-family: Verdana;
+	font-size: 1.5rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+.heading{
+	color: #FFF;
+	font-family: Verdana;
+	font-size: 1.5rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+form{
+	align-items:center;
+	margin-top:14.39%;
+	padding-left: auto;
+	justify-content:space-between;
+	display:flex;
+	flex-direction:column;
+	gap:3.96%vw;
+}
+input{
+	border-radius: 8px;
+	border: 1px solid #737373;
+	background: #AFB2B2;
+	display: flex;
+	width: 80%;
+	align-items: center;
+}
+.uname{
+	padding: 1.98% 54.87% 1.82% 2.98%;
+	margin-bottom:4.11%;
+}
+.pass{
+	padding: 1.49% 58.22% 2.31% 2.97%;
+	margin-bottom: 12.64%;
+	
+}
+button{
+	width: 79.8%;
+    padding: 10px 0px 9px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+	border: 1px solid #737373;
+	background:  #2C3E50;
+	font-family: Verdana;
+	font-size: 1.5rem;
+	font-style: bold;
+	font-weight: 400;
+	line-height: normal;
+	color:#ffffff;
+	position:absolute;
+	bottom:11.82%;
+
+}
+
+
+.snackbar {
+	position: fixed;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	padding: 10px 20px;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	visibility: hidden;
+}
+
+.snackbar.show {
+	visibility: visible;
+}
+
+@media (max-width: 430px) {
+    /* Hide .info element on mobile devices */
+    .info {
+        display: none;
+        visibility:hidden;
+    }
+
+    /* Style .login element for mobile devices */
+    .login {
+        width: 100%; /* Make full-width */
+        position: relative; /* Keep relative positioning */
+
+        /* Add some spacing and visual effects */
+        padding: auto; /* Add some padding for better readability */
+        backdrop-filter: blur(16.73px);
+        border-radius: 8.71px;
+        background-color: rgba(255, 255, 255, 0.12);
+        border: 0.6px solid rgba(255, 255, 255, 0.05);
+        box-sizing: border-box;
+
+        /* Set dimensions and layout */
+        max-height: 339.3px;
+        overflow: hidden;
+        text-align: left;
+        position:relative;
+
+        /* Typography */
+        font-size: 13.94px;
+        color: #737373;
+        font-family: Verdana;
+        align-items:center;
+    	justify-content: center;
+    }
+    body{
+    display:flex;
+    justify-content: center;
+    align-items: center;    
+    }
+}
+	
