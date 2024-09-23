@@ -17,11 +17,11 @@
 <div class="main">
 <div class="sign-up">
 <span class="heading">Create an account</span>
-<form action="" method="post">
-<input class="uname" type="text" placeholder="Enter Your Full Name">
-<input class="uname" type="text" placeholder="Enter Username">
-<input class="uname" type="text" placeholder="Enter Your Email Address">
-<input class="pass" type="password" placeholder="Password">
+<form action="signup" method="post">
+<input class="uname" name="name" type="text" placeholder="Enter Your Full Name">
+<input class="uname" name="username" type="text" placeholder="Enter Username">
+<input class="uname" name="email" type="text" placeholder="Enter Your Email Address">
+<input class="pass" name="password" type="password" placeholder="Password">
 <button class="heading" type="submit">Sign up</button>
 </form>
 
