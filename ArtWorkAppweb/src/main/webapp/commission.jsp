@@ -11,6 +11,20 @@
 <title>Submit Comission requests</title>
 </head>
 <body>
+
+<%
+response.setHeader("Cache-Control","no-cache,no-store,must-revalidate");//HTTP 1.1
+
+response.setHeader("Pragma","no-cache");//HTTP 1.0
+
+response.setHeader("Expires","0");//Proxies
+
+
+if(session.getAttribute("loggedinUser")==null) {
+	response.sendRedirect("login.jsp");
+}
+%>
+
 <div class="main">
 <form action="" method="post">
 <fieldset class="sub-heading">Request a <span class="main-heading">Custom Artwork</span></fieldset>
@@ -70,7 +84,7 @@
 
 <div class="container">
 	<label for="contactno">Contact No</label>
-	<input id="contactno" type="number" pattern="\d{10}" required maxlength=10>
+	<input id="contactno" type="number" pattern="\d{10}" >
 </div>
 <div class="container">
 	<label for="ref">Reference Image</label>
@@ -95,12 +109,12 @@
 
 <!-- Nav element -->
 <nav id="navbar">
-<div id="logo" class="logo">
-	<img class="logo-img"src="images/Logo.png">
+<div id="logo"  class="logo">
+	<img  class="logo-img"src="images/Logo.png">
 </div>
 <div id="group" class="group">
-<a id="w" target="_blank">ABOUT</a>
-<a id="w" target="_blank">ARTWORKS</a>
+<a id="w" href="/ArtWorkAppweb/aboutus.jsp">ABOUT</a>
+<a id="w" href="/ArtWorkAppweb/artworks.jsp">ARTWORKS</a>
 <div id="menu" class="menu-icon">
     <div id="tl" class="line top-line"></div>
     <div id="bl" class="line bottom-line"></div>
@@ -108,11 +122,11 @@
 
 	</div>
 <div id="menu-option" class="menu-option hid">
-<a href="#" target="_blank"> ABOUT</a>
-<a href="#" target="_blank"> ARTWORKS</a>
-<a href="#" target="_blank"> COMMISSIONS</a>
+<a href="/ArtWorkAppweb/aboutus.jsp" > ABOUT</a>
+<a href="/ArtWorkAppweb/artworks.jsp" > ARTWORKS</a>
+<a href="/ArtWorkAppweb/commission.jsp"> COMMISSIONS</a>
 </div>	
-<div id="log-out" class="log-out hid"><a href="#">Log out</a></div>
+<div id="log-out" class="log-out hid"><a href="/ArtWorkAppweb/logout">Log out</a></div>
 	
 </nav>
 

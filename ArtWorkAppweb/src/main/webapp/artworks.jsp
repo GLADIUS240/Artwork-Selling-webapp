@@ -12,6 +12,20 @@
 </head>
 <body>
 
+<%
+	response.setHeader("Cache-Control","no-cache,no-store,must-revalidate");//HTTP 1.1
+	
+	response.setHeader("Pragma","no-cache");//HTTP 1.0
+	
+	response.setHeader("Expires","0");//Proxies
+
+
+
+if(session.getAttribute("loggedinUser")==null) {
+	response.sendRedirect("login.jsp");
+}
+%>
+
 <div class="gallery">
 
 <div class="image i1" id="image">
@@ -110,9 +124,9 @@
 <p class="about-us">Creating timeless, personalized art with passion and professionalism. Let's collaborate and bring your vision to life. Explore my gallery today!</section>
 <section class="links"><h3 id="w">Quick Links</h3>
 <div class="quick-links">
-<a href="#">Home</a>
-<a href="#">Artworks</a>
-<a href="#">Commissions</a>
+<a href="/ArtWorkAppweb/index.jsp">Home</a>
+<a href="/ArtWorkAppweb/artworks.jsp">Artworks</a>
+<a href="/ArtWorkAppweb/commission.jsp">Commissions</a>
 <a href="#">Contact</a></div></section>
 <section class="contact"><h3 id="w">Contact Us</h3>
 <img src="images/Insta_icon.svg"> <img src="images/linkedin_icon.svg"> <img src="images/gmail_icon.svg"></section>
@@ -125,8 +139,8 @@
 	<img class="logo-img"src="images/Logo.png">
 </div>
 <div id="group" class="group">
-<a id="w" target="_blank">ABOUT</a>
-<a id="w" target="_blank">ARTWORKS</a>
+<a id="w" href="/ArtWorkAppweb/aboutus.jsp">ABOUT</a>
+<a id="w" href="/ArtWorkAppweb/artworks.jsp">ARTWORKS</a>
 <div id="menu" class="menu-icon">
     <div id="tl" class="line top-line"></div>
     <div id="bl" class="line bottom-line"></div>
@@ -134,11 +148,11 @@
 
 	</div>
 <div id="menu-option" class="menu-option hid">
-<a href="#" target="_blank"> ABOUT</a>
-<a href="#" target="_blank"> ARTWORKS</a>
-<a href="#" target="_blank"> COMMISSIONS</a>
+<a href="/ArtWorkAppweb/aboutus.jsp" > ABOUT</a>
+<a href="/ArtWorkAppweb/artworks.jsp" > ARTWORKS</a>
+<a href="/ArtWorkAppweb/commission.jsp" target="_blank"> COMMISSIONS</a>
 </div>	
-<div id="log-out" class="log-out hid"><a href="#">Log out</a></div>
+<div id="log-out" class="log-out hid"><a href="/ArtWorkAppweb/logout">Log out</a></div>
 	
 </nav>
 

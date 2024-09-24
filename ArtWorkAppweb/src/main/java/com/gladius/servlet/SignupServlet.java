@@ -11,6 +11,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 @WebServlet("/signup")
 public class SignupServlet extends HttpServlet{
@@ -30,8 +31,10 @@ public class SignupServlet extends HttpServlet{
 		CustomerDAO dao=new CustomerDAO(HibernateUtil.getSessionFactory());
 		boolean f=dao.saveCustomer(customer);
 		
-		if(f)
+		if(f) {
 			System.out.println("registerd Successfully");
+			resp.sendRedirect("login.jsp");
+		}
 		else
 			System.out.println("Server Error");
 	}

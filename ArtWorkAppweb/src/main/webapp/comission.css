@@ -83,6 +83,11 @@ nav{
 	line-height: normal;
 	
 }
+.group a{
+	text-decoration:none;
+	
+}
+
 
 .menu-icon {
 	padding-top: 0.78vh;

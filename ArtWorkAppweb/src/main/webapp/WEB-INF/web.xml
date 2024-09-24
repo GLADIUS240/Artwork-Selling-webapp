@@ -4,4 +4,14 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>ArtworksServlet</servlet-name>
+  	<display-name>ArtworksServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.gladius.servlet.ArtworksServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ArtworksServlet</servlet-name>
+  	<url-pattern>/artworks</url-pattern>
+  </servlet-mapping>
 </web-app>
