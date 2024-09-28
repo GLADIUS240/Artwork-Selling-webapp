@@ -26,14 +26,14 @@ if(session.getAttribute("loggedinUser")==null) {
 %>
 
 <div class="main">
-<form action="" method="post">
+<form action="commission" method="post" enctype="multipart/form-data">
 <fieldset class="sub-heading">Request a <span class="main-heading">Custom Artwork</span></fieldset>
 <p class="para">Fill out the form below to provide details about your custom artwork request. Our talented artists will work with you to create a masterpiece.</p>
 
 <div class="wrapper">
 
 <div class="container"><label for="size">Size</label>
-<select id="size" required>
+<select id="size" name="size" required>
 	<optgroup label="Paper">
 		<option value="A3">A3</option>
 		<option value="A4" selected>A4</option>
@@ -54,7 +54,7 @@ if(session.getAttribute("loggedinUser")==null) {
 </div>
 <div class="container">
 <label for="medium">Medium</label>
-<select id="medium" required>
+<select id="medium" name="medium" required>
 	<option value="graphite" selected>Graphite</option>
 	<option value="charcoal">Charcoal</option>
 	<option value="pencil colour">Pencil Colour</option>
@@ -71,11 +71,11 @@ if(session.getAttribute("loggedinUser")==null) {
 
 <div class="container">
 	<label for="budget">Budget(in inr)</label>
-	<input type="number" min=1800>
+	<input type="number" name="budget" min=1800>
 </div>
 <div class="container">
 	<label for="deadline">Deadline</label>
-	<input id="appointment" type="date">
+	<input id="appointment" name="deadline" type="date">
 </div>
 
 </div>
@@ -84,11 +84,11 @@ if(session.getAttribute("loggedinUser")==null) {
 
 <div class="container">
 	<label for="contactno">Contact No</label>
-	<input id="contactno" type="number" pattern="\d{10}" >
+	<input id="contactno" name="contactno" type="number" pattern="\d{10}" >
 </div>
 <div class="container">
 	<label for="ref">Reference Image</label>
-	<input type="file" id="ref" accept=".img,.jpeg,.jpg,.svg,.heic,.pdf" required>
+	<input type="file" id="ref" name="reference" accept=".img,.jpeg,.jpg,.svg,.heic,.pdf" required>
 </div>
 
 </div>
@@ -97,7 +97,7 @@ if(session.getAttribute("loggedinUser")==null) {
 
 <div class="container">
 	<label for="description">Description</label>
-	<textarea class="des" id="description"  maxlength=500 rows="4" cols="50"></textarea>
+	<textarea class="des" name="description" id="description"  maxlength=500 rows="4" cols="50"></textarea>
 	
 </div>
 
