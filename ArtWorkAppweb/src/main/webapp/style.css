@@ -555,3 +555,41 @@ nav.overlay{
 	text-decoration:none;
 }
 	
+@media only screen and (max-width:480px){
+	
+	nav{
+	top:2.35vh;
+	left:5.13vw;
+	right:5.13vw;
+	}
+	
+	.logo{
+	width:36px;
+	height:36px;
+	}
+	
+	.group{
+	font-size:3.05vw;
+	gap: 3.59vw;
+	}
+	
+.menu-icon {
+	margin-right: 3.33vw;
+    width: 5.13vw;
+    height:1.88vh;
+    gap:0.70vh;
+    
+}
+.top-line{
+	width:4.36vw;
+	margin-bottom:0.70vh;
+	
+}
+.bottom-line{
+	width:4.36vw;
+	
+}
+	
+}	
+
+	
