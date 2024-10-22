@@ -18,7 +18,7 @@
 
 <span class="subtitle"><label class="heading Title-text">Works of</label><label id="art" class="heading Title-text"> art</label></span>
 
-<div id="btn"  class="button " id="w" ><h3 class="get">Get Yours </h3><img src="images/get_icon.svg" class="icon"></div>
+<a class="btn-link" href="/ArtWorkAppweb/login.jsp"> <div id="btn" class="button " id="w" ><h3 class="get">Get Yours </h3><img src="images/get_icon.svg" class="icon"></div></a>
 
 <div class="card-frame">
 <div class="card">

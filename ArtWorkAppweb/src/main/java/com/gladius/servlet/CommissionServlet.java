@@ -1,9 +1,8 @@
 package com.gladius.servlet;
 
 import java.io.IOException;
-import java.io.InputStream;
-import java.nio.file.Paths;
 
+import java.io.InputStream;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.MultipartConfig;
 import jakarta.servlet.annotation.WebServlet;
@@ -11,10 +10,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.Part;
-
-import java.io.File;
 import java.util.Properties;
-
 import jakarta.activation.DataHandler;
 import jakarta.mail.Authenticator;
 import jakarta.mail.Message;
@@ -58,21 +54,8 @@ public class CommissionServlet extends HttpServlet {
 		String message="Size: "+ size + "	" + "Medium: "+ medium + "\n" + "Budget: ₹" + budget + "	" + "Deadline: " + deadline + "\n"
 				+ "Contact No: " + contactNo + "\n\n" + "Description: " + description;
 		
-		//method start
-		
-		
-		
-		
-		
-		
-		
-		//methodend
 		
 		sendAttach(filePart,fileContent,message,subject,to,from);
-		
-		
-		System.out.println(size+" "+medium+" "+budget+" "+deadline+" "+contactNo+" "+"\n\n "+description );
-		
 		
 		resp.sendRedirect("index.jsp");
 		
@@ -156,10 +139,6 @@ public class CommissionServlet extends HttpServlet {
     		}catch (Exception e) {
     			e.printStackTrace();
     		}
-    		
-		
 	}
-	
-	
 
 }

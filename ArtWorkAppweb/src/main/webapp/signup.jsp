@@ -26,7 +26,7 @@
 </form>
 
 </div>
-<span class="sub-heading">Already a member yet?<a href="#">Login</a></span>
+<span class="sub-heading">Already a member yet?<a href="/ArtWorkAppweb/login.jsp">Login</a></span>
 
 </div>
 

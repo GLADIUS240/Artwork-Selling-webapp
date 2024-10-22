@@ -91,6 +91,7 @@ label.into{
 	display:inline;
 	white-space: nowrap;
 	font-size:2.3vw;
+	
 }
 nav{
 	border-radius: 20px;
@@ -169,23 +170,25 @@ line-height: 116px;
 	margin-right:4.44vw;
  	margin-top: 109.1%vh;
  	padding-bottom:10vmin;
-	display: flex;
+	columns:29.65vw;
 	width: 91.5%; 
-    height: 22.7%;
-	justify-content: center;
-	align-items:center;
+    height: 36.8vh;
 	gap: 1.11vw;
 	background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.85) 71.95%,);
 }
 .card{
 	width: 29.6vw; /* Equivalent to 427px based on a 1440px viewport width */
-    height: 30.8vh;
+    height: 36.8vh;
 	overflow:hidden;
+	border:2px solid  #A2A2A2;
+	border-radius:18px;
+	
 }
 .card img{
 	width:100%;
 	height:100%;
 	object-fit:cover;
+	
 }
 
 span.title-main{
@@ -546,5 +549,9 @@ nav.overlay{
 .title-main, .subtitle, .button{
     position: relative;
     z-index: 2; /* Higher z-index so it stays above the light effect */
+}
+
+.btn-link{
+	text-decoration:none;
 }
 	

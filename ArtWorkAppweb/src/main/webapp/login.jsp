@@ -18,10 +18,10 @@
   <path d="M13 13L427 13" stroke="#2C3E50" stroke-opacity="0.45" stroke-width="26" stroke-linecap="round"/>
 </svg>
 <span class="subheading">New User?</span>
-<span class="create">Create Account <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+<a class="btn-link" href="/ArtWorkAppweb/signup.jsp"><span class="create">Create Account <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
   <path d="M28 16L4 16" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
   <path d="M20 8L28 16L20 24" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-</svg></span>
+</svg></span></a>
 </div>
 
 <div class="login">
