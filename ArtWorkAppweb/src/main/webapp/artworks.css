@@ -376,6 +376,8 @@ footer {
 	justify-content: center;
 	align-items: center;
 	box-sizing: border-box;
+	background-size: 34.17vw 600px;
+	transition: all .3s ease-in-out;
 
 }
 
@@ -383,56 +385,38 @@ footer {
 
 .image.i1 {
 	background: url(images/Zoro_artwork.png) lightgray 50% / cover no-repeat;
-	background-size: 34.17vw 600px;
-	transition: all .3s ease-in-out;
 }
 
 .image.i2 {
 	background: url(images/John_Wick.png) lightgray 50% / cover no-repeat;
-	background-size: 34.17vw 600px;
-	transition: all .3s ease-in-out;
 }
 
 .image.i3 {
 	background: url(images/Moonfall.png) lightgray 50% / cover no-repeat;
-	background-size: 34.17vw 600px;
-	transition: all .3s ease-in-out;
 }
 
 .image.i4 {
 	background: url(images/Cillian_Murphy.png) lightgray 50% / cover no-repeat;
-	background-size: 34.17vw 600px;
-	transition: all .3s ease-in-out;
 }
 
 .image.i5 {
 	background: url(images/Lamp_artwork.png) lightgray 50% / cover no-repeat;
-	background-size: 34.17vw 600px;
-	transition: all .3s ease-in-out;
 }
 
 .image.i6 {
 	background: url(images/Selena.png) lightgray 50% / cover no-repeat;
-	background-size: 34.17vw 600px;
-	transition: all .3s ease-in-out;
 }
 
 .image.i7 {
 	background: url(images/Killua.png) lightgray 50% / cover no-repeat;
-	background-size: 34.17vw 600px;
-	transition: all .3s ease-in-out;
 }
 
 .image.i8 {
 	background: url(images/Mother_teresa.png) lightgray 50% / cover no-repeat;
-	background-size: 34.17vw 600px;
-	transition: all .3s ease-in-out;
 }
 
 .image.i9 {
 	background: url(images/Johnny_depp.png) lightgray 50% / cover no-repeat;
-	background-size: 34.17vw 600px;
-	transition: all .3s ease-in-out;
 }
 
 
@@ -516,5 +500,33 @@ h4.topic {
 		width: 4.36vw;
 
 	}
+/*  nav element css ends here */
+
+/* other css */
+
+
+	.gallery{
+	grid-template-columns: repeat(2, 42.82vw);
+	margin:9.62vh 5.13vw 3.76vh 5.13vw;
+	gap:1.41vh 4.10vw;
+	}
+
+/* .gallery { */
+/* 	display: grid; */
+/* 	grid-template-columns: repeat(3, 27.57vw); */
+/* 	margin: 14.06vh 7.22vw 7.81vh 7.22vw; */
+/* 	gap: 1.17vh 1.39vw; */
+/* } */
+.image{
+	width:42.82vw;
+	height:23.94vh; /*204px eq*/
+	border-radius: 2.05vw;
+	background-size:27.37vw 29.58vh/*252px eq*/;
+}
+.image:hover {
+	background-size:42.75vw 23.86vh;
+}
+
+
 
 }
