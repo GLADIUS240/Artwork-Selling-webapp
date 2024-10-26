@@ -137,3 +137,54 @@ a {
 	text-decoration: none;
 	color: #1A4C80;
 }
+
+@media only screen and (max-width:480px) {
+	.bg{
+	display:none;
+	}
+	.main{
+	width:100vw;
+	gap:15.49vh;
+	
+	}
+	.sign-up{
+	width:89.74vw;
+	height:38.97vh;
+	padding-top:1.40vh;
+	padding-bottom:7.26vh;
+	gap:3.94vh;
+	
+	}
+	
+	.heading{
+	font-size:3.50vw;
+	}
+	
+	form{
+	gap:1.60vh;
+	}
+	
+	input{
+	width:70.55vw;
+	height:3.47vh;
+	border-radius:1.17vw;
+	font-size:2.62vw;
+	padding:0.62vh 34.34vw 1.06vh 2.62vw;
+	}
+	
+	button{
+	width:70.55vw;
+	margin-top:2.40vh;
+	padding:0.54vh 23.32vw 0.62vh 23.32vw;
+	gap:5.40vw;
+	border-radius:2.33vw;
+	border:0.15vw solid #4C5DB9;
+	}
+	.sub-heading, a{
+	font-size:2.05vw;
+	}
+	.sub-heading{
+	margin-bottom:13.85vh;
+	}	
+	
+	}
