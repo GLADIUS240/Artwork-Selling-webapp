@@ -11,6 +11,7 @@ const bottomline=document.getElementById('bl');
 const container = document.querySelector(".hero-section"); 
 const light = document.querySelector("#lit");
 
+if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
 container.addEventListener("mousemove", e => {
     const rect = container.getBoundingClientRect();
     const x = e.clientX - rect.left; 
@@ -24,6 +25,8 @@ window.addEventListener("scroll", () => {
     const yScroll = window.scrollY;
     light.style.setProperty("--scroll", yScroll + "px");
 });
+
+}
 menuIcon.addEventListener('click', () => {
     // Toggle the active state of the menu icon
 	

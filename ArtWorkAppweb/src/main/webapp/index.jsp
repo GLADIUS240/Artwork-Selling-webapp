@@ -14,9 +14,9 @@
 <div class="welcome_page">
 <div class="hero-section">
 
-<span class="title-main"><label  class="heading Title-text">CRAFTING </label><label id="w" class="heading">MEMORIES </label><label class="into">into</label></span>
+<span class="title-main"><label  class="heading Title-text">Crafting </label><label id="w" class="heading">Memories </label><label class="into">into</label></span>
 
-<span class="subtitle"><label class="heading Title-text">Works of</label><label id="art" class="heading Title-text"> art</label></span>
+<span class="subtitle"><label class="heading sub Title-text">Works of</label><label id="art" class="heading sub Title-text"> art</label></span>
 
 <a class="btn-link" href="/ArtWorkAppweb/login.jsp"> <div id="btn" class="button " id="w" ><h3 class="get">Get Yours </h3><img src="images/get_icon.svg" class="icon"></div></a>
 
@@ -28,14 +28,14 @@
 <img  src="images/Zoro_artwork.png"></div>
 
 <div class="card">
-<img src="images/Killua.png"></div>
+<img class="killua" src="images/Killua.png"></div>
 
 </div>
 <div id="lit" class="light"></div>
 
 </div>
 
-<h1 class="heading why" id="w">Why Choose Me?</h1>
+<h1 class="heading why" id="w">Why <span class="heading choose">Choose Me?</span></h1>
 
 <!--  points why choose me-->
 <section class="points">
