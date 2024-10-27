@@ -37,8 +37,6 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
-
 }
 
 #w {
@@ -393,8 +391,13 @@ input[type="file"]::file-selector-button {
 	border-radius: 5px;
 	cursor: pointer;
 	font-size: var(--font-size-paragraph-description);
+	box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+	transition: background-color 200ms;
 }
 
+input[type="file"]::file-selector-button:hover {
+  background-color: #6C7484;
+}
 input[type="file"] {
 	font-size: var(--font-size-paragraph-description);
 }
@@ -405,6 +408,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 @media only screen and (max-width:480px) {
+	
+	body{
+	align-items:normal;
+	}
 
 	nav {
 		top: 2.35vh;
@@ -440,5 +447,76 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 		width: 4.36vw;
 
 	}
+	
+	/*main */
+	.main{
+	margin-top:9.62vh;
+	}
+	form{
+	margin-top:0;
+	padding-top:0;
+	padding-left:5.13vw;
+	gap:4.10vw 1.88vh;
+	}
+	fieldset{
+	margin-bottom:0;
+	font-size:4.62vw;
+	}
+	
+	.para{
+	width:89.74vw;
+	font-size:3.08vw;
+	margin-bottom:1.88vh;
+	}
+	label{
+	font-size:3.08vw;
+	}
+	input,select,textarea{
+	width:42.82vw;
+	height:3.76vh;
+	border-radius:2.05vw;
+	border:0.26vw solid #1A1A1A;
+	}
+	.des{
+	width:89.74vw;
+	height:21.13vh;
+	}
+	.btn{
+	margin-top:1.41vh;
+	font-size:2.58vw;
+	padding: 0.47vh 3.59vw;
+	gap:1.03vw;
+	border-radius: 1.72vw;
+	margin-right:71.28vw;
+	border:0.11vw solid #4C5DB9;
+	}
+	.container{
+	gap:0.47vh;
+	}
+	.wrapper{
+	gap:4.10vw;
+	}
+	.mob{
+	flex-direction:column;
+	gap:1.88vh;
+	
+	}
+	.mob input{
+	width:89.74vw;
+	}
+	
+	input[type="file"]::file-selector-button{
+	
+	transform: scale(1.2);
+	border: .13vw solid #ccc;
+	border-radius:1.28vw;
+	font-size:3.08vw;
+	margin: 0.70vh 2.05vw;
+	}
+	
+	input[type="file"]{
+	font-size:3.08vw;
+	}
 
+	
 }

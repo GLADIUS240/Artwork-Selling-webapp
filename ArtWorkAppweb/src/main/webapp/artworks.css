@@ -376,8 +376,6 @@ footer {
 	justify-content: center;
 	align-items: center;
 	box-sizing: border-box;
-	background-size: 34.17vw 600px;
-	transition: all .3s ease-in-out;
 
 }
 
@@ -417,6 +415,11 @@ footer {
 
 .image.i9 {
 	background: url(images/Johnny_depp.png) lightgray 50% / cover no-repeat;
+}
+
+.image.i1, .image.i2, .image.i3, .image.i4, .image.i5, .image.i6, .image.i7, .image.i8, .image.i9{
+	background-size: 34.17vw 600px;
+	transition: all .3s ease-in-out;
 }
 
 
@@ -521,7 +524,11 @@ h4.topic {
 	width:42.82vw;
 	height:23.94vh; /*204px eq*/
 	border-radius: 2.05vw;
-	background-size:27.37vw 29.58vh/*252px eq*/;
+	
+}
+.image.i1, .image.i2, .image.i3, .image.i4, .image.i5, .image.i6, .image.i7, .image.i8, .image.i9{
+	background-size:52.98vw 29.58vh/*252px eq*/;
+	transition: all .3s ease-in-out;
 }
 .image:hover {
 	background-size:42.75vw 23.86vh;

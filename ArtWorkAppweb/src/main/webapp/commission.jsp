@@ -80,7 +80,7 @@ if(session.getAttribute("loggedinUser")==null) {
 
 </div>
 
-<div class="wrapper">
+<div class="wrapper mob">
 
 <div class="container">
 	<label for="contactno">Contact No</label>
