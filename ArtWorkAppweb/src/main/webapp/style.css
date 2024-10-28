@@ -396,12 +396,8 @@ footer {
 }
 
 .contact {
-	display: felx;
-	align-items: center;
-	justify-content: center;
 	flex-shrink: 0;
 	margin-right: 3.26vw;
-
 }
 
 
@@ -648,12 +644,12 @@ nav.overlay {
 	height:100vh;
 	position:relative;
 	background:linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.85) 100%),linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.45) 100%), url(images/John_Wick.png) lightgray 50% / cover no-repeat;
-	border-radius: 16px;
 	overflow:visible;
 
 	}
 	.heading{
 	font-size:10.26vw;
+	white-space:wrap;
 	}
 	.card-frame .card:not(:last-child){
 	display:none;
@@ -724,7 +720,9 @@ nav.overlay {
 	}
 	.choose{
 	position:relative;
-	top:-6.52vh;
+	top:-6.95vh;/*-8.95*/
+/* 	display:block; */
+/* 	right:17.02vw; */
 	
 	}
 	.killua{
@@ -743,4 +741,66 @@ nav.overlay {
 	font-size:4.10vw;
 	line-height:normal;
 	}
+	.invite{
+	width:89.74vw;
+	margin-left:5.13vw;
+	
+	}
+	.title{
+	font-size:6.15vw;
+	padding-bottom:3.29vh;
+	}
+	.unfocused{
+	font-size:4.10vw;
+	}
+	.about-container, .abt{
+	display:none;
+	}
+	hr{
+	margin-top:3.76vh;
+	}
+	
+	/* Footer for Mobile devices*/
+	
+	footer{
+	margin-top:2.35vh;
+	margin-bottom:7.51vh;
+	flex-direction:column;
+	gap:2.82vh;
+	padding-left:5.13vw;
+	
+	}
+	.about h3,
+	.contact h3,
+	.links h3 {
+	font-size: 4.62vw;
+	}
+	.about-us{
+	margin-top:1.41vh;
+	font-size:3.08vw;
+	line-height:1.88vh;
+	}
+	.quick-links{
+	margin-top:1.41vh;
+	gap:0.94vh;
+	}
+	.quick-links a{
+	font-size:4.10vw;
+	margin-bottom:0;
+	}
+	.about{
+	width:53.52vw;
+	margin:0;
+	}
+	.contact h3{
+	margin-bottom:1.41vh;
+	}
+	.contact img{
+	width: 5.13vw;
+	height:2.35vh;
+	margin-right:2.05vw;
+	}
+/* 	.mem{ */
+/* 	display:block; need to be fixed for default font */
+/* 	} */
 }

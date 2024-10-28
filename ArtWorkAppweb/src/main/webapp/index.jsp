@@ -14,7 +14,7 @@
 <div class="welcome_page">
 <div class="hero-section">
 
-<span class="title-main"><label  class="heading Title-text">Crafting </label><label id="w" class="heading">Memories </label><label class="into">into</label></span>
+<span class="title-main"><label  class="heading Title-text">Crafting </label><label id="w" class="heading mem">Memories </label><label class="into">into</label></span>
 
 <span class="subtitle"><label class="heading sub Title-text">Works of</label><label id="art" class="heading sub Title-text"> art</label></span>
 

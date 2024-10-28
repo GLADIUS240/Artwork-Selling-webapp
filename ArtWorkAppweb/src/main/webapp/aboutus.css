@@ -477,4 +477,44 @@ footer {
 	font-size:4.10vw;
 	}
 
+/*footer */
+footer{
+	margin-top:2.35vh;
+	margin-bottom:7.51vh;
+	flex-direction:column;
+	gap:2.82vh;
+	padding-left:5.13vw;
+	
+	}
+	.about h3,
+	.contact h3,
+	.links h3 {
+	font-size: 4.62vw;
+	}
+	.about-us{
+	margin-top:1.41vh;
+	font-size:3.08vw;
+	line-height:1.88vh;
+	}
+	.quick-links{
+	margin-top:1.41vh;
+	gap:0.94vh;
+	}
+	.quick-links a{
+	font-size:4.10vw;
+	margin-bottom:0;
+	}
+	.about{
+	width:53.52vw;
+	margin:0;
+	}
+	.contact h3{
+	margin-bottom:1.41vh;
+	}
+	.contact img{
+	width: 5.13vw;
+	height:2.35vh;
+	margin-right:2.05vw;
+	}
+
 }

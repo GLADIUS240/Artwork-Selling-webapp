@@ -455,8 +455,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 	form{
 	margin-top:0;
 	padding-top:0;
+	margin-left:5.13vw;
 	padding-left:5.13vw;
 	gap:4.10vw 1.88vh;
+	
 	}
 	fieldset{
 	margin-bottom:0;
