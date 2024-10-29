@@ -26,7 +26,7 @@ if(session.getAttribute("loggedinUser")==null) {
 %>
 
 <div class="main">
-<form action="commission" method="post" enctype="multipart/form-data">
+<form onsubmit="return validatePhonenumber()" action="commission" method="post" enctype="multipart/form-data">
 <fieldset class="sub-heading">Request a <span class="main-heading">Custom Artwork</span></fieldset>
 <p class="para">Fill out the form below to provide details about your custom artwork request. Our talented artists will work with you to create a masterpiece.</p>
 
@@ -71,7 +71,7 @@ if(session.getAttribute("loggedinUser")==null) {
 
 <div class="container">
 	<label for="budget">Budget(in inr)</label>
-	<input type="number" name="budget" min=1800>
+	<input type="number" name="budget">
 </div>
 <div class="container">
 	<label for="deadline">Deadline</label>
@@ -109,9 +109,9 @@ if(session.getAttribute("loggedinUser")==null) {
 
 <!-- Nav element -->
 <nav id="navbar">
-<div id="logo"  class="logo">
-	<img  class="logo-img"src="images/Logo.png">
-</div>
+<a href="/ArtWorkAppweb/index.jsp" id="logo" class="logo">
+	<img class="logo-img" alt="logo" src="images/Logo.png">
+</a>
 <div id="group" class="group">
 <a id="w" href="/ArtWorkAppweb/aboutus.jsp">ABOUT</a>
 <a id="w" href="/ArtWorkAppweb/artworks.jsp">ARTWORKS</a>

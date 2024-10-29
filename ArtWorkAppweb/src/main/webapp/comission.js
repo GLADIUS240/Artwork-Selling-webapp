@@ -28,10 +28,12 @@ document.addEventListener('DOMContentLoaded', function() {
 	document.getElementById('appointment').setAttribute('min', minDateString);
 });
 
-
-const phoneNumber = document.getElementById('contactno').value;
-const phoneRegex = /^\d{10}$/;
-
-if (!phoneRegex.test(phoneNumber)) {
-	alert('Please enter a valid 10-digit phone number.');
+function validatePhonenumber(){
+	var phoneNumber = document.getElementById('contactno').value;
+	var phoneRegex = /^\d{10}$/;
+	if (!phoneRegex.test(phoneNumber)) {
+		alert('Please enter a valid 10-digit phone number.');
+		return false;
+	}
+	return true;
 }

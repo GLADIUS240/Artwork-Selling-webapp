@@ -18,7 +18,16 @@
 
 <span class="subtitle"><label class="heading sub Title-text">Works of</label><label id="art" class="heading sub Title-text"> art</label></span>
 
-<a class="btn-link" href="/ArtWorkAppweb/login.jsp"> <div id="btn" class="button " id="w" ><h3 class="get">Get Yours </h3><img src="images/get_icon.svg" class="icon"></div></a>
+<%
+if(session.getAttribute("loggedinUser")==null){ 
+       out.println("<a class=\"btn-link\" href=\"/ArtWorkAppweb/login.jsp\">"
+                   + "<div id=\"btn\" class=\"button\">"
+                   + "<h3 class=\"get\">Get Yours</h3>"
+                   + "<img src=\"images/get_icon.svg\" class=\"icon\">"
+                   + "</div></a>");
+   }
+%>
+
 
 <div class="card-frame">
 <div class="card">
@@ -74,14 +83,14 @@
 <a href="/ArtWorkAppweb/commission.jsp">Commissions</a>
 <a href="#">Contact</a></div></section>
 <section class="contact"><h3 id="w">Contact Us</h3>
-<img src="images/Insta_icon.svg"> <img src="images/linkedin_icon.svg"> <img src="images/gmail_icon.svg"></section>
+<a href="https://www.instagram.com/btechxartist/" target="_blank"><img src="images/Insta_icon.svg" alt="insta:btechxartist"></a> <a href="https://www.linkedin.com/in/deepak-bora-552b5224b/" target="_blank"><img src="images/linkedin_icon.svg" alt="linkedin profile"></a> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=deepakbora0000@gmail.com&su=Feedback" target="_blank"><img src="images/gmail_icon.svg" alt="email:deepakbora0000@gmail.com"></a></section>
 </footer>
 
 <!--Navbar element  -->
 <nav id="navbar">
-<div id="logo" class="logo">
-	<img class="logo-img"src="images/Logo.png">
-</div>
+<a href="/ArtWorkAppweb/index.jsp" id="logo" class="logo">
+	<img class="logo-img" alt="logo" src="images/Logo.png">
+</a>
 <div id="group" class="group">
 <a id="w" href="/ArtWorkAppweb/aboutus.jsp">ABOUT</a>
 <a id="w" href="/ArtWorkAppweb/artworks.jsp" >ARTWORKS</a>

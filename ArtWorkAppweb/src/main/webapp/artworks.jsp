@@ -129,15 +129,15 @@ if(session.getAttribute("loggedinUser")==null) {
 <a href="/ArtWorkAppweb/commission.jsp">Commissions</a>
 <a href="#">Contact</a></div></section>
 <section class="contact"><h3 id="w">Contact Us</h3>
-<img src="images/Insta_icon.svg"> <img src="images/linkedin_icon.svg"> <img src="images/gmail_icon.svg"></section>
+<a href="https://www.instagram.com/btechxartist/" target="_blank"><img src="images/Insta_icon.svg" alt="insta:btechxartist"></a> <a href="https://www.linkedin.com/in/deepak-bora-552b5224b/" target="_blank"><img src="images/linkedin_icon.svg" alt="linkedin profile"></a> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=deepakbora0000@gmail.com&su=Feedback" target="_blank"><img src="images/gmail_icon.svg" alt="email:deepakbora0000@gmail.com"></a></section>
 </footer>
 
 <!-- nav bar element -->
 
 <nav id="navbar">
-<div id="logo" class="logo">
-	<img class="logo-img"src="images/Logo.png">
-</div>
+<a href="/ArtWorkAppweb/index.jsp" id="logo" class="logo">
+	<img class="logo-img" alt="logo" src="images/Logo.png">
+</a>
 <div id="group" class="group">
 <a id="w" href="/ArtWorkAppweb/aboutus.jsp">ABOUT</a>
 <a id="w" href="/ArtWorkAppweb/artworks.jsp">ARTWORKS</a>
