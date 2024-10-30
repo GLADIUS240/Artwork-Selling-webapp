@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="components/css/header.css">
 <link rel="stylesheet" href="comission.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Verdana:wght@400;700&display=swap" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico:wght@400&display=swap" />
@@ -107,28 +108,8 @@ if(session.getAttribute("loggedinUser")==null) {
 
 
 
-<!-- Nav element -->
-<nav id="navbar">
-<a href="/ArtWorkAppweb/index.jsp" id="logo" class="logo">
-	<img class="logo-img" alt="logo" src="images/Logo.png">
-</a>
-<div id="group" class="group">
-<a id="w" href="/ArtWorkAppweb/aboutus.jsp">ABOUT</a>
-<a id="w" href="/ArtWorkAppweb/artworks.jsp">ARTWORKS</a>
-<div id="menu" class="menu-icon">
-    <div id="tl" class="line top-line"></div>
-    <div id="bl" class="line bottom-line"></div>
-</div>
-
-	</div>
-<div id="menu-option" class="menu-option hid">
-<a href="/ArtWorkAppweb/aboutus.jsp" > ABOUT</a>
-<a href="/ArtWorkAppweb/artworks.jsp" > ARTWORKS</a>
-<a href="/ArtWorkAppweb/commission.jsp"> COMMISSIONS</a>
-</div>	
-<div id="log-out" class="log-out hid"><a href="/ArtWorkAppweb/logout">Log out</a></div>
-	
-</nav>
+<!--Navbar element  -->
+<%@ include file="components/jsp/header.jsp" %>
 
 
 <script src="comission.js"></script>
